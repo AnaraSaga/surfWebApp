@@ -2,11 +2,7 @@ package de.telran.surf.entity;
 
 import lombok.Getter;
 import lombok.Setter;
-import org.springframework.cglib.proxy.Mixin;
-import org.springframework.data.annotation.Id;
-import org.springframework.lang.NonNull;
 
-import javax.annotation.Generated;
 import java.util.UUID;
 
 @Getter
@@ -29,7 +25,7 @@ public class Product {
 
     private String picture;
 
-    public Product(String id) {
+    public Product() {
         this.id = UUID.randomUUID().toString();
     }
 }
